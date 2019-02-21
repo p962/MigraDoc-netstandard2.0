@@ -304,14 +304,6 @@
       <Project>{e6a2734e-0cd6-4210-8aec-47ee348f8d78}</Project>
       <Name>PdfSharp.Charting-wpf</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MigraDoc.DocumentObjectModel-wpf\MigraDoc.DocumentObjectModel-wpf.csproj">
-      <Project>{769E6587-72F9-475C-9422-D43ACD4C7AC1}</Project>
-      <Name>MigraDoc.DocumentObjectModel-wpf</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MigraDoc.Rendering-wpf\MigraDoc.Rendering-wpf.csproj">
-      <Project>{497784da-4fdd-43e5-bc4e-6702c8f1aee0}</Project>
-      <Name>MigraDoc.Rendering-wpf</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="..\MigraDoc.RtfRendering\RtfRendering.Resources\PDF.png">

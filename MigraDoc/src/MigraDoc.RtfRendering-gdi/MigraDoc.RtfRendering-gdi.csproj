@@ -289,14 +289,6 @@
       <Project>{cfdb7d46-ea8d-47de-b10a-9e755a1b48ba}</Project>
       <Name>PdfSharp.Charting-gdi</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MigraDoc.DocumentObjectModel-gdi\MigraDoc.DocumentObjectModel-gdi.csproj">
-      <Project>{4666abf3-efe5-49bd-b2e8-9e04f5949145}</Project>
-      <Name>MigraDoc.DocumentObjectModel-gdi</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MigraDoc.Rendering-gdi\MigraDoc.Rendering-gdi.csproj">
-      <Project>{febbe5be-9f58-4967-bbcf-801f1cfcd774}</Project>
-      <Name>MigraDoc.Rendering-gdi</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\MigraDoc.RtfRendering\StrongnameKey.snk">
