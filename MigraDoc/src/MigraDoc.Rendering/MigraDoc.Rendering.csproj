@@ -1,11 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <VersionSuffix Condition="'$(VersionSuffix)' == ''">0</VersionSuffix>
-    <Version>1.51.$(VersionSuffix)</Version>
     <TargetFramework>netstandard2.0</TargetFramework>
     <DefineConstants>$(DefineConstants);CORE;CORE_WITH_GDI</DefineConstants>
     <AssemblyName>MigraDoc.Rendering</AssemblyName>
-    <PackageId>MigraDoc.Rendering.Standard</PackageId>
+    <PackageId>PdfSharp.MigraDoc.Standard</PackageId>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -16,6 +14,8 @@
     <RootNamespace>MigraDoc.Rendering</RootNamespace>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultContentItems>false</EnableDefaultContentItems>
+    <VersionSuffix Condition="'$(VersionSuffix)' == ''">0</VersionSuffix>
+    <Version>1.51.$(VersionSuffix)</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="4.5.0" />

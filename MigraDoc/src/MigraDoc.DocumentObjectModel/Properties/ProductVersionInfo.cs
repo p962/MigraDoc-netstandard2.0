@@ -80,7 +80,7 @@ namespace MigraDoc
         /// <summary>
         /// The name the product.
         /// </summary>
-        public const string Product = "empira MigraDoc";
+        public const string Product = "MigraDoc.Rendering.Standard";
 
         /// <summary>
         /// The copyright information.
