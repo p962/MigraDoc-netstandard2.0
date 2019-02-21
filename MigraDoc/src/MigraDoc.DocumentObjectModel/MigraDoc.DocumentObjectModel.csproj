@@ -15,6 +15,7 @@
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <VersionSuffix Condition="'$(VersionSuffix)' == ''">0</VersionSuffix>
     <Version>1.51.$(VersionSuffix)</Version>
+    <PackageId>PdfSharp.MigraDoc.Standard.DocumentObjectModel</PackageId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="4.5.0" />
