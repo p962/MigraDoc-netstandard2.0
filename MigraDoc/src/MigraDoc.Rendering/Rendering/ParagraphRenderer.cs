@@ -3,7 +3,7 @@
 // Authors:
 //   Klaus Potzesny
 //
-// Copyright (c) 2001-2017 empira Software GmbH, Cologne Area (Germany)
+// Copyright (c) 2001-2019 empira Software GmbH, Cologne Area (Germany)
 //
 // http://www.pdfsharp.com
 // http://www.migradoc.com
@@ -910,7 +910,7 @@ namespace MigraDoc.Rendering
         void RenderBookmarkField(BookmarkField bookmarkField)
         {
             // Add also a named destination, if a PdfDocument is rendered.
-            var pdfDocument = _gfx.PdfPage.Owner;
+            var pdfDocument = _gfx?.PdfPage?.Owner;
             if (pdfDocument != null)
             {
                 var pageNr = pdfDocument.PageCount; // Magic: Pages are added while rendering, so the current page number equals pdfDocument.PageCount.

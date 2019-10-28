@@ -1,6 +1,6 @@
 #region MigraDoc - Creating Documents on the Fly
 //
-// Copyright (c) 2001-2017 empira Software GmbH, Cologne Area (Germany)
+// Copyright (c) 2001-2019 empira Software GmbH, Cologne Area (Germany)
 //
 // http://www.pdfsharp.com
 // http://www.migradoc.com
@@ -112,7 +112,7 @@ namespace MigraDoc
         /// <summary>
         /// The build number of the product.
         /// </summary>
-        public const string VersionBuild = "5162"; // V16G //"4212"; // Also used for NuGet Version.
+        public const string VersionBuild = "5186"; // V16G //"4212"; // Also used for NuGet Version.
 
         /// <summary>
         /// The patch number of the product.
