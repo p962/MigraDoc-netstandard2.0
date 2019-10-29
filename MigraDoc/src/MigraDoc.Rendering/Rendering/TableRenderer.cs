@@ -460,8 +460,10 @@ namespace MigraDoc.Rendering
             {
                 var row = _table.Rows[r];
 
-                foreach (var bookmark in row.GetElementsRecursively<BookmarkField>())
-                    _fieldInfos.AddBookmark(bookmark.Name);
+                foreach (Cell cell in row.Cells)
+                    foreach (DocumentObject elem in cell.Elements)
+                        if (elem is BookmarkField bookmark)
+                            _fieldInfos.AddBookmark(bookmark.Name);
             }
         }
 

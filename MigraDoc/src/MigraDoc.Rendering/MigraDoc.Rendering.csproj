@@ -3,7 +3,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <DefineConstants>$(DefineConstants);CORE;CORE_WITH_GDI</DefineConstants>
     <AssemblyName>MigraDoc.Rendering</AssemblyName>
-    <PackageId>PdfSharp.MigraDoc.Standard</PackageId>
+    <PackageId>PdfSharp.MigraDoc.netstandard</PackageId>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -15,7 +15,13 @@
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <EnableDefaultContentItems>false</EnableDefaultContentItems>
     <VersionSuffix Condition="'$(VersionSuffix)' == ''">0</VersionSuffix>
-    <Version>1.51.$(VersionSuffix)</Version>
+    <Version>1.3.0</Version>
+    <Authors />
+    <PackageProjectUrl>https://github.com/jmanm/MigraDoc-netstandard2.0</PackageProjectUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <RepositoryUrl>https://github.com/jmanm/MigraDoc-netstandard2.0</RepositoryUrl>
+    <PackageReleaseNotes>Release to coincide with PdfSharp-netstandard 1.3.0.</PackageReleaseNotes>
+    <PackageLicenseFile>mit-license.txt</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="4.5.0" />
@@ -100,6 +106,13 @@
   <ItemGroup>
     <EmbeddedResource Include="Rendering.Resources\Messages.de.restext" />
     <EmbeddedResource Include="Rendering.Resources\Messages.restext" />
+    <None Include="..\..\..\mit-license.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
     <None Include="StrongnameKey.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
 </Project>

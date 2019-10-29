@@ -107,12 +107,12 @@ namespace MigraDoc
         /// <summary>
         /// The minor version number of the product.
         /// </summary>
-        public const string VersionMinor = "51"; // Also used for NuGet Version.
+        public const string VersionMinor = "3"; // Also used for NuGet Version.
 
         /// <summary>
         /// The build number of the product.
         /// </summary>
-        public const string VersionBuild = "5186"; // V16G //"4212"; // Also used for NuGet Version.
+        public const string VersionBuild = "0"; // V16G //"4212"; // Also used for NuGet Version.
 
         /// <summary>
         /// The patch number of the product.
