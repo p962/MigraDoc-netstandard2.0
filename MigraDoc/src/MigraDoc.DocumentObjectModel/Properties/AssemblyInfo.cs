@@ -47,7 +47,7 @@ using MigraDoc.DocumentObjectModel;
 [assembly: InternalsVisibleTo("MigraDoc.Forms-gdi")]
 [assembly: InternalsVisibleTo("MigraDoc.Forms-wpf")]
 
-[assembly: InternalsVisibleTo("MigraDoc.Rendering")]
+[assembly: InternalsVisibleTo("MigraDoc.Rendering.netstandard")]
 [assembly: InternalsVisibleTo("MigraDoc.Rendering-gdi")]
 [assembly: InternalsVisibleTo("MigraDoc.Rendering-wpf")]
 [assembly: InternalsVisibleTo("MigraDoc.Rendering-sl")]

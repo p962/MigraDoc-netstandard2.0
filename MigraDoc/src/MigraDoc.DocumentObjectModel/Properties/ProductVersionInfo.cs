@@ -80,7 +80,7 @@ namespace MigraDoc
         /// <summary>
         /// The name the product.
         /// </summary>
-        public const string Product = "MigraDoc.Rendering.Standard";
+        public const string Product = "MigraDoc.Rendering.netstandard";
 
         /// <summary>
         /// The copyright information.
@@ -112,7 +112,7 @@ namespace MigraDoc
         /// <summary>
         /// The build number of the product.
         /// </summary>
-        public const string VersionBuild = "0"; // V16G //"4212"; // Also used for NuGet Version.
+        public const string VersionBuild = "1"; // V16G //"4212"; // Also used for NuGet Version.
 
         /// <summary>
         /// The patch number of the product.
