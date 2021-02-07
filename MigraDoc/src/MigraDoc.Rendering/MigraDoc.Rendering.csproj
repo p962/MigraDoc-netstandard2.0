@@ -25,6 +25,7 @@
     <FileVersion>1.3.2.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="PDFSharp.Standard" Version="1.50.5153" />
     <PackageReference Include="System.Drawing.Common" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup>
@@ -112,8 +113,6 @@
     <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp.Charting\PDFSharp.Charting.csproj" />
-    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp\PDFSharp.csproj" />
     <ProjectReference Include="..\MigraDoc.DocumentObjectModel\MigraDoc.DocumentObjectModel.csproj" />
   </ItemGroup>
 </Project>

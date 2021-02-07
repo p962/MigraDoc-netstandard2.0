@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>PDFSharp.MigraDoc.Standard</id>
-    <version>1.50.5152</version>
-    <title>PDFsharp + MigraDoc</title>
+    <id>MigraDoc.Standard</id>
+    <version>1.50.5153</version>
+    <title>MigraDoc</title>
     <authors>empira Software GmbH</authors>
     <owners>empira Software GmbH</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -13,23 +13,18 @@
     <description>MigraDoc Foundation - the Open Source .NET library that easily creates documents based on an object model with paragraphs, tables, styles, etc. and renders them into PDF or RTF. This is the MigraDoc PDF Core package. See Project Information for details.</description>
     <summary>Creating Documents on the Fly. This is the MigraDoc PDF Core package. See Project Information for details.</summary>
     <tags>MigraDoc PdfSharp Pdf Document Generation</tags>
-    <frameworkAssemblies>
-      <frameworkAssembly assemblyName="System.Drawing" targetFramework="" />
-    </frameworkAssemblies>
     
     <dependencies>
       <group targetFramework=".NETStandard2.0">
         <dependency id="System.Drawing.Common" version="4.5.0" exclude="Build,Analyzers" />
+        <dependency id="PDFSharp.Standard" version="1.50.5153" />
       </group>
     </dependencies>
     
-    <releaseNotes>Includes a small fix to allow PDFSharp to read PDF files that skip ID numbers in the xref.</releaseNotes>
   </metadata>
   <files>
-    <file src="..\..\PDFSharp\src\PdfSharp\bin\Release\netstandard2.0\PDFSharp.dll" target="lib\netstandard2.0\PDFSharp.dll" />
-    <file src="..\..\PDFSharp\src\PdfSharp.Charting\bin\Release\netstandard2.0\PDFSharp.Charting.dll" target="lib\netstandard2.0\PDFSharp.Charting.dll" />
-    <file src=".\MigraDoc.DocumentObjectModel\bin\Release\netstandard2.0\MigraDoc.DocumentObjectModel.dll" target="lib\netstandard2.0\MigraDoc.DocumentObjectModel.dll" />
-    <file src=".\MigraDoc.Rendering\bin\Release\netstandard2.0\MigraDoc.Rendering.dll" target="lib\netstandard2.0\MigraDoc.Rendering.dll" />
-    <file src=".\MigraDoc.RtfRendering\bin\Release\netstandard2.0\MigraDoc.RtfRendering.dll" target="lib\netstandard2.0\MigraDoc.RtfRendering.dll" />
+    <file src="..\MigraDoc.DocumentObjectModel\bin\Release\netstandard2.0\MigraDoc.DocumentObjectModel.dll" target="lib\netstandard2.0\MigraDoc.DocumentObjectModel.dll" />
+    <file src="..\MigraDoc.Rendering\bin\Release\netstandard2.0\MigraDoc.Rendering.dll" target="lib\netstandard2.0\MigraDoc.Rendering.dll" />
+    <file src="..\MigraDoc.RtfRendering\bin\Release\netstandard2.0\MigraDoc.RtfRendering.dll" target="lib\netstandard2.0\MigraDoc.RtfRendering.dll" />
   </files>
 </package>
