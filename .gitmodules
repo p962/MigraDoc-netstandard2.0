@@ -1,3 +1,3 @@
 [submodule "PDFsharp"]
-	path = PDFsharp
+	path = PDFSharp
 	url = git@github.com:p962/PDFSharp-netstandard2.0.git
