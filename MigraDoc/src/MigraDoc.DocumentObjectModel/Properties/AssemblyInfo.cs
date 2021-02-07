@@ -37,7 +37,7 @@ using MigraDoc.DocumentObjectModel;
 #if DEBUG
 [assembly: AssemblyProduct(VersionInfo.Product + " (Debug Build)")]
 #else
-  [assembly: AssemblyProduct(VersionInfo.Product)]
+  [assembly: AssemblyProduct("MigraDoc.DocumentObjectModel")]
 #endif
 [assembly: AssemblyCopyright(VersionInfo.Copyright)]
 [assembly: AssemblyTrademark(VersionInfo.Trademark)]

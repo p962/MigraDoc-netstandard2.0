@@ -16,7 +16,7 @@
     <EnableDefaultContentItems>false</EnableDefaultContentItems>
     <VersionSuffix Condition="'$(VersionSuffix)' == ''">0</VersionSuffix>
     <Version>1.3.3</Version>
-    <Authors />
+    <Authors>MigraDoc.RtfRendering</Authors>
     <PackageProjectUrl>https://github.com/jmanm/MigraDoc-netstandard2.0</PackageProjectUrl>
     <PackageIconUrl></PackageIconUrl>
     <RepositoryUrl>https://github.com/jmanm/MigraDoc-netstandard2.0</RepositoryUrl>

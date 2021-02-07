@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>PDFSharp.MigraDoc.Standard</id>
-    <version>1.50.5148</version>
+    <version>1.50.5152</version>
     <title>PDFsharp + MigraDoc</title>
     <authors>empira Software GmbH</authors>
     <owners>empira Software GmbH</owners>
@@ -16,13 +16,20 @@
     <frameworkAssemblies>
       <frameworkAssembly assemblyName="System.Drawing" targetFramework="" />
     </frameworkAssemblies>
+    
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="System.Drawing.Common" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    
     <releaseNotes>Includes a small fix to allow PDFSharp to read PDF files that skip ID numbers in the xref.</releaseNotes>
   </metadata>
   <files>
-    <file src="..\..\PDFSharp\src\PdfSharp\bin\Release\netstandard2.0\PDFSharp.dll" target="lib" />
-    <file src="..\..\PDFSharp\src\PdfSharp.Charting\bin\Release\netstandard2.0\PDFSharp.Charting.dll" target="lib" />
-    <file src=".\MigraDoc.DocumentObjectModel\bin\Release\netstandard2.0\MigraDoc.DocumentObjectModel.dll" target="lib" />
-    <file src=".\MigraDoc.Rendering\bin\Release\netstandard2.0\MigraDoc.Rendering.dll" target="lib" />
-    <file src=".\MigraDoc.RtfRendering\bin\Release\netstandard2.0\MigraDoc.RtfRendering.dll" target="lib" />
+    <file src="..\..\PDFSharp\src\PdfSharp\bin\Release\netstandard2.0\PDFSharp.dll" target="lib\netstandard2.0\PDFSharp.dll" />
+    <file src="..\..\PDFSharp\src\PdfSharp.Charting\bin\Release\netstandard2.0\PDFSharp.Charting.dll" target="lib\netstandard2.0\PDFSharp.Charting.dll" />
+    <file src=".\MigraDoc.DocumentObjectModel\bin\Release\netstandard2.0\MigraDoc.DocumentObjectModel.dll" target="lib\netstandard2.0\MigraDoc.DocumentObjectModel.dll" />
+    <file src=".\MigraDoc.Rendering\bin\Release\netstandard2.0\MigraDoc.Rendering.dll" target="lib\netstandard2.0\MigraDoc.Rendering.dll" />
+    <file src=".\MigraDoc.RtfRendering\bin\Release\netstandard2.0\MigraDoc.RtfRendering.dll" target="lib\netstandard2.0\MigraDoc.RtfRendering.dll" />
   </files>
 </package>
