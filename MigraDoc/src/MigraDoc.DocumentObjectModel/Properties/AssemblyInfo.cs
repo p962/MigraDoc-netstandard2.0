@@ -41,13 +41,13 @@ using MigraDoc.DocumentObjectModel;
 #endif
 [assembly: AssemblyCopyright(VersionInfo.Copyright)]
 [assembly: AssemblyTrademark(VersionInfo.Trademark)]
-[assembly: AssemblyVersion(VersionInfo.Version)]
+[assembly: AssemblyVersion("1.3.2.0")]
 [assembly: AssemblyCulture(VersionInfo.Culture)]
 
 [assembly: InternalsVisibleTo("MigraDoc.Forms-gdi")]
 [assembly: InternalsVisibleTo("MigraDoc.Forms-wpf")]
 
-[assembly: InternalsVisibleTo("MigraDoc.Rendering.netstandard")]
+[assembly: InternalsVisibleTo("MigraDoc.Rendering")]
 [assembly: InternalsVisibleTo("MigraDoc.Rendering-gdi")]
 [assembly: InternalsVisibleTo("MigraDoc.Rendering-wpf")]
 [assembly: InternalsVisibleTo("MigraDoc.Rendering-sl")]

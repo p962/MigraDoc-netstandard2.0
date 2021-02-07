@@ -1,51 +1,35 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BE1A7733-C8B8-47F2-B0C5-154009BB800D}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MigraDoc</RootNamespace>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <DefineConstants>$(DefineConstants);CORE;CORE_WITH_GDI</DefineConstants>
     <AssemblyName>MigraDoc.RtfRendering</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
-    <TargetFrameworkProfile />
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\MigraDoc.RtfRendering.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AssemblyOriginatorKeyFile>StrongnameKey.snk</AssemblyOriginatorKeyFile>
+    <PackageId>MigraDoc.RtfRendering</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <RootNamespace>MigraDoc.RtfRendering</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultContentItems>false</EnableDefaultContentItems>
+    <VersionSuffix Condition="'$(VersionSuffix)' == ''">0</VersionSuffix>
+    <Version>1.3.3</Version>
+    <Authors />
+    <PackageProjectUrl>https://github.com/jmanm/MigraDoc-netstandard2.0</PackageProjectUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <RepositoryUrl>https://github.com/jmanm/MigraDoc-netstandard2.0</RepositoryUrl>
+    <PackageReleaseNotes>Release to coincide with PdfSharp-netstandard 1.3.0.</PackageReleaseNotes>
+    <PackageLicenseFile>mit-license.txt</PackageLicenseFile>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Xml" />
+    <EmbeddedResource Remove="Rendering.Resources\**" />
+    <None Remove="Rendering.Resources\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.5.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PdfSharp.Drawing.Shapes\Shape.cs" />
@@ -101,46 +85,19 @@
     <Compile Include="RtfRendering\TextRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="RtfRendering.Resources\Messages.de.restext" />
-    <EmbeddedResource Include="RtfRendering.Resources\Messages.restext" />
-    <None Include="RtfRendering.Resources\PDF.psd" />
+    <None Include="..\..\..\mit-license.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
     <None Include="StrongnameKey.snk" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp.Charting\PdfSharp.Charting.csproj">
-      <Project>{6f98a822-41b0-4c7a-85a6-e95c1d3e88ef}</Project>
-      <Name>PdfSharp.Charting</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp\PdfSharp.csproj">
-      <Project>{5a6055bc-bf86-4fdd-9f62-0109db7a303b}</Project>
-      <Name>PdfSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MigraDoc.DocumentObjectModel\MigraDoc.DocumentObjectModel.csproj">
-      <Project>{6318a852-ef6b-486f-8547-3d7e736d7943}</Project>
-      <Name>MigraDoc.DocumentObjectModel</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MigraDoc.Rendering\MigraDoc.Rendering.csproj">
-      <Project>{a0b7940a-0bfc-476d-a204-73f7c0f88fde}</Project>
-      <Name>MigraDoc.Rendering</Name>
-    </ProjectReference>
+    <Folder Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="RtfRendering.Resources\Messages2.de.resx">
-      <DependentUpon>Messages2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RtfRendering.Resources\Messages2.resx">
-      <DependentUpon>Messages2.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp.Charting\PDFSharp.Charting.csproj" />
+    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp\PDFsharp.csproj" />
+    <ProjectReference Include="..\MigraDoc.DocumentObjectModel\MigraDoc.DocumentObjectModel.csproj" />
+    <ProjectReference Include="..\MigraDoc.Rendering\MigraDoc.Rendering.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="RtfRendering.Resources\PDF.png" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

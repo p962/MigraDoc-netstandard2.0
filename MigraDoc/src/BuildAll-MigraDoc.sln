@@ -1,18 +1,28 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!PDFsharp", "!PDFsharp", "{603BA43F-715B-471B-897B-871FD0EC35A8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PDFsharp", "PDFsharp", "{603BA43F-715B-471B-897B-871FD0EC35A8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDFsharp", "..\..\PDFsharp\src\PdfSharp\PDFsharp.csproj", "{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfSharp.Charting", "..\..\PDFsharp\src\PdfSharp.Charting\PdfSharp.Charting.csproj", "{6F98A822-41B0-4C7A-85A6-E95C1D3E88EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDFSharp.Charting", "..\..\PDFsharp\src\PdfSharp.Charting\PDFSharp.Charting.csproj", "{6F98A822-41B0-4C7A-85A6-E95C1D3E88EF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigraDoc.DocumentObjectModel", "MigraDoc.DocumentObjectModel\MigraDoc.DocumentObjectModel.csproj", "{6318A852-EF6B-486F-8547-3D7E736D7943}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigraDoc.Rendering", "MigraDoc.Rendering\MigraDoc.Rendering.csproj", "{A0B7940A-0BFC-476D-A204-73F7C0F88FDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigraDoc.RtfRendering", "MigraDoc.RtfRendering\MigraDoc.RtfRendering.csproj", "{BE1A7733-C8B8-47F2-B0C5-154009BB800D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B756AAE9-13DF-4196-93FE-1B3D21ACEEA6}"
+	ProjectSection(SolutionItems) = preProject
+		PDFSharp.MigraDoc.nuspec = PDFSharp.MigraDoc.nuspec
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuspec", ".nuspec", "{C8363E62-7F91-493F-A0D7-38010BD86E01}"
+	ProjectSection(SolutionItems) = preProject
+		PDFSharp.MigraDoc.nuspec = PDFSharp.MigraDoc.nuspec
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

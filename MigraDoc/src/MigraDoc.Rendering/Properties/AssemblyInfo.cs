@@ -41,9 +41,11 @@ using MigraDoc.Rendering;
 #endif
 [assembly: AssemblyCopyright(VersionInfo.Copyright)]
 [assembly: AssemblyTrademark(VersionInfo.Trademark)]
-[assembly: AssemblyVersion(VersionInfo.Version)]
+[assembly: AssemblyVersion("1.3.2.0")]
 [assembly: AssemblyCulture(VersionInfo.Culture)]
 
 [assembly: ComVisible(false)]
+
+[assembly: InternalsVisibleTo("MigraDoc.Rendering")]
 //[assembly: AssemblyDelaySign(false)]
 //[assembly: AssemblyKeyName("")]
