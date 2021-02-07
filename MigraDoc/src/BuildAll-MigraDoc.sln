@@ -4,7 +4,7 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PDFsharp", "PDFsharp", "{603BA43F-715B-471B-897B-871FD0EC35A8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDFsharp", "..\..\PDFsharp\src\PdfSharp\PDFsharp.csproj", "{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDFSharp", "..\..\PDFsharp\src\PdfSharp\PDFSharp.csproj", "{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PDFSharp.Charting", "..\..\PDFsharp\src\PdfSharp.Charting\PDFSharp.Charting.csproj", "{6F98A822-41B0-4C7A-85A6-E95C1D3E88EF}"
 EndProject

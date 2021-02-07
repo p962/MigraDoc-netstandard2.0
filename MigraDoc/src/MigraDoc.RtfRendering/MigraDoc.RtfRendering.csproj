@@ -96,7 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp.Charting\PDFSharp.Charting.csproj" />
-    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp\PDFsharp.csproj" />
+    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp\PDFSharp.csproj" />
     <ProjectReference Include="..\MigraDoc.DocumentObjectModel\MigraDoc.DocumentObjectModel.csproj" />
     <ProjectReference Include="..\MigraDoc.Rendering\MigraDoc.Rendering.csproj" />
   </ItemGroup>
