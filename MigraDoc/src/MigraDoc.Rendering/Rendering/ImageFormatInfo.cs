@@ -29,6 +29,7 @@
 #endregion
 
 using PdfSharp.Drawing;
+using System.IO;
 
 namespace MigraDoc.Rendering
 {

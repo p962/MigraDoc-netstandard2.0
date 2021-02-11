@@ -62,7 +62,7 @@ namespace MigraDoc.Rendering
             _imageFilePath = _image.GetFilePath(_documentRenderer.WorkingDirectory);
             // The Image is stored in the string if path starts with "base64:", otherwise we check whether the file exists.
             if (!_imageFilePath.StartsWith("base64:") &&
-                !XImage.ExistsFile(_imageFilePath))
+                !XImage.ExistsFile(_imageFilePath) && (_image.ImageStream == null))
             {
                 _failure = ImageFailure.FileNotFound;
                 Debug.WriteLine(Messages2.ImageNotFound(_image.Name), "warning");
@@ -107,7 +107,14 @@ namespace MigraDoc.Rendering
                 {
                     XRect srcRect = new XRect(formatInfo.CropX, formatInfo.CropY, formatInfo.CropWidth, formatInfo.CropHeight);
                     //xImage = XImage.FromFile(formatInfo.ImagePath);
-                    xImage = CreateXImage(formatInfo.ImagePath);
+                    if (_image.ImageStream != null)
+                    {
+                        xImage = XImage.FromStream(_image.ImageStream);
+                    }
+                    else
+                    {
+                        xImage = CreateXImage(formatInfo.ImagePath);
+                    }
                     _gfx.DrawImage(xImage, destRect, srcRect, XGraphicsUnit.Point); //Pixel.
                 }
                 catch (Exception)
@@ -166,8 +173,14 @@ namespace MigraDoc.Rendering
                 XImage xImage = null;
                 try
                 {
-                    //xImage = XImage.FromFile(_imageFilePath);
-                    xImage = CreateXImage(_imageFilePath);
+                    if (_image.ImageStream != null)
+                    {
+                        xImage = CreateXImage(_image.ImageStream);
+                    }
+                    else
+                    {
+                        xImage = CreateXImage(_imageFilePath);
+                    }
                 }
                 catch (InvalidOperationException ex)
                 {
@@ -332,6 +345,11 @@ namespace MigraDoc.Rendering
                 else
                     formatInfo.Height = XUnit.FromCentimeter(2.5);
             }
+        }
+
+        XImage CreateXImage(Stream imageStream)
+        {
+            return XImage.FromStream(imageStream);
         }
 
         XImage CreateXImage(string uri)

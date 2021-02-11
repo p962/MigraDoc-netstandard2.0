@@ -35,6 +35,7 @@ using MigraDoc.DocumentObjectModel.Visitors;
 using MigraDoc.DocumentObjectModel.Shapes.Charts;
 using MigraDoc.DocumentObjectModel.Tables;
 using MigraDoc.DocumentObjectModel.Shapes;
+using System.IO;
 
 namespace MigraDoc.DocumentObjectModel
 {
@@ -167,6 +168,14 @@ namespace MigraDoc.DocumentObjectModel
         public Image AddImage(string fileName)
         {
             return Elements.AddImage(fileName);
+        }
+
+        /// <summary>
+        /// Adds a new Image to the section.
+        /// </summary>
+        public Image AddImage(Stream imageStream)
+        {
+            return Elements.AddImage(imageStream);
         }
 
         /// <summary>

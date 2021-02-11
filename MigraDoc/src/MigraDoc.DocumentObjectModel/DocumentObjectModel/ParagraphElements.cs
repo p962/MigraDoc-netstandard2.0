@@ -34,6 +34,7 @@ using System;
 using MigraDoc.DocumentObjectModel.Internals;
 using MigraDoc.DocumentObjectModel.Fields;
 using MigraDoc.DocumentObjectModel.Shapes;
+using System.IO;
 
 namespace MigraDoc.DocumentObjectModel
 {
@@ -482,10 +483,18 @@ namespace MigraDoc.DocumentObjectModel
         /// <summary>
         /// Adds a new Image.
         /// </summary>
-        public Image AddImage(string name)
+        public Image AddImage(string filename)
         {
             Image image = new Image();
-            image.Name = name;
+            image.Name = filename;
+            Add(image);
+            return image;
+        }
+
+        public Image AddImage(Stream imageStream)
+        {
+            Image image = new Image();
+            image.ImageStream = imageStream;
             Add(image);
             return image;
         }

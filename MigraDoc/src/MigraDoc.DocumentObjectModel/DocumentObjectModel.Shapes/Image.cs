@@ -98,6 +98,17 @@ namespace MigraDoc.DocumentObjectModel.Shapes
         internal NString _name = NString.NullValue;
 
         /// <summary>
+        /// Gets or sets the name of the image.
+        /// </summary>
+        public Stream ImageStream
+        {
+            get { return _stream; }
+            set { _stream = value; }
+        }
+        
+        internal Stream _stream = null;
+
+        /// <summary>
         /// Gets or sets the ScaleWidth of the image.
         /// If the Width is set to, the resulting image width is ScaleWidth * Width.
         /// </summary>

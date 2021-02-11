@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>MigraDoc.Standard</id>
-    <version>1.50.5158</version>
+    <version>1.50.5154</version>
     <title>MigraDoc</title>
     <authors>empira Software GmbH</authors>
     <owners>empira Software GmbH</owners>
