@@ -14,6 +14,8 @@
     <summary>Creating Documents on the Fly. This is the MigraDoc PDF Core package. See Project Information for details.</summary>
     <tags>MigraDoc PdfSharp Pdf Document Generation</tags>
     
+    <repository type="git" url="https://github.com/sneeknet/MigraDoc-netstandard2.0" />
+    
     <dependencies>
       <group targetFramework=".NETStandard2.0">
         <dependency id="System.Drawing.Common" version="4.5.0" exclude="Build,Analyzers" />
